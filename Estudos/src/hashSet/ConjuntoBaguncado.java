@@ -19,5 +19,7 @@ public class ConjuntoBaguncado
         System.out.println(conjunto.size());
 
         System.out.println(conjunto.remove("olá"));
+
+        System.out.println(conjunto.contains(true));
     }
 }
