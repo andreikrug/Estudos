@@ -9,4 +9,9 @@ public class Filme extends AudioVisual
         super(nome, codigo, ano, gen, c );
         this.duracao = duracao;
     }
+
+    public int imprimeDuracaoDoFilme()
+    {
+       return duracao;
+    }
 }
