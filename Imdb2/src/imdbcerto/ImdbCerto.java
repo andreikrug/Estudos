@@ -16,14 +16,18 @@ public class ImdbCerto
        f1.AdicionaAtor(a1);
        s1.AdicionaAtor(a2);
        
-       Netflix n = new Netflix();
+       
+       Streaming n = new Streaming("netflix");
+           
+       
        
        n.insereTitulo(f1);
        n.insereTitulo(s1);
-       n.imprimeNomeTitulos();
-       
 
-       s1.listaEpisodiosPorTemporada();
+       Controle controle = new Controle();
+       controle.fazerTudo(n);
+
+       
        
    
       

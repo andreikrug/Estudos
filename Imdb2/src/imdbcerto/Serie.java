@@ -44,7 +44,7 @@ public class Serie extends AudioVisual
    {   int i = 1;
        for(Temporadas t : temporadas)
        {
-           System.out.println("Numero de episodios na temporada "+i+" :"+ t.getEpisodios());
+           System.out.println("Numero de episodios na temporada "+i+" : "+ t.getEpisodios());
            i++;
        }
    }
