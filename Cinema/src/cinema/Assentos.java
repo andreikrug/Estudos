@@ -6,9 +6,18 @@ public class Assentos
 {
     private String lugar;
     private boolean reservado;
+    private char mapa = 'L';
 
     public String getLugar() {
         return lugar;
+    }
+
+    public char getMapa() {
+        return mapa;
+    }
+
+    public void setMapa(char mapa) {
+        this.mapa = mapa;
     }
 
     public void setLugar(String lugar) {

@@ -13,13 +13,14 @@ public class Cinema {
         
         CriaCinema c = new CriaCinema(168);
         c.criaLugares();
-        c.ListaLugaresVagos();
-        System.out.println("\n\n!!!! Conforme os lugares apresentados, digite o lugar desejado");
-        String lugar = scanner.next();
-        c.reservaLugar(lugar);
-        
+       // c.ListaLugaresVagos();
+        //System.out.println("\n\n!!!! Conforme os lugares apresentados, digite o lugar desejado");
+        //String lugar = scanner.next();
+        //c.reservaLugar(lugar);
+         
        
-        c.totalDeLugaresOcupados();
+       // c.totalDeLugaresOcupados();
+       System.out.println( c.imprimeMapa());
         
         
         

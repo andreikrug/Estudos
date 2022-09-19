@@ -57,6 +57,7 @@ public class CriaCinema
                 {  
                     System.out.println("Lugar vago e vai ser reservado para você");
                     a.setReservado(true);
+                    a.setMapa('O');
                     return true;
                     
                 } else {
@@ -79,6 +80,36 @@ public class CriaCinema
             }
         }
         System.out.println("A quantidade de lugares ocupados é: "+val+" de 168");
+    }
+
+    public String imprimeMapa()
+    {   
+        int val = 0;
+        int a = 0;
+        int letra = 0;
+        String retorno = "";
+          retorno += "              1   2   3   4   5   6   7   8   9   10  11  12  13  14\n";
+         for(Assentos assento : lugares)
+         {  
+            if(a == letra)
+            {
+                retorno += "Fileira : "+letras[letra]+"//";
+                letra ++;
+                
+            }
+            
+           
+                retorno += " "+assento.getMapa()+" |";
+                val ++; 
+                if(val > 13)
+                {    
+                     retorno += "\n";
+                     a ++;
+                     val = 0;
+                } 
+            
+         }
+         return retorno;
     }
             
     
