@@ -21,7 +21,7 @@ public class Cinema {
        
        // c.totalDeLugaresOcupados();
        System.out.println( c.imprimeMapa());
-        
+         
         
         
         
